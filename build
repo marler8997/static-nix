@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if [ ! -d out ]; then
+  meson out
+fi
+ninja -C out
